@@ -1,0 +1,389 @@
+---
+footer: "Prof. Dr. Theo Rethisch | Fachbereich 10 | Hochschule Niederrhein"
+lang: de
+bibliography: literatur.bib
+slide-number: true
+scrollable: true
+citations-hover: true
+footnotes-hover: true
+controls: true
+hash-type: number
+from: markdown+emoji
+fig-format: png
+hide-inactive-cursor: true
+hide-cursor-time: 200
+link-external-icon: true
+link-external-newwindow: true
+format: 
+  revealjs: 
+    embed-resources: true # alle benötigten Dateien direkt in den HTML-Output schreiben
+    transition: fade
+    background-transition: slide
+    theme: [default, HSNR.scss, fontvollkorn.scss, fontrobotmono.scss]
+    resources:
+      - fonts/Roboto-Mono-regular.woff2
+      - fonts/Vollkorn-Bold.woff2
+      - fonts/Vollkorn-BoldItalic.woff2
+      - fonts/Vollkorn-Italic.woff2
+      - fonts/Vollkorn-Regular.woff2
+---
+
+
+
+::: {.HSNR-title}
+
+## Quarto und Revealjs
+
+### Eine kurze Einführung
+
+#### Hanz Hanzen
+
+##### Fachbereich Gesundheitsweisen
+
+###### MHC M3 Spezialwissen 2022
+
+###### 11.10.2021 | MHC
+
+
+:::
+
+
+<!------------------------------------>
+## Quarto und RevealJS {.smaller}
+
+Dies ist eine Vorlage für Folien im HSNR-Design, die mittels `quarto` und `revealjs` gerendert werden.
+
+Allgemeine Informationen finden Sie unter
+
+- <https://quarto.org/docs/presentations/revealjs/>
+- <https://quarto.org/docs/presentations/revealjs/presenting.html>
+- <https://quarto.org/docs/presentations/revealjs/advanced.html>
+
+<!------------------------------------>
+
+
+
+<!-- ----------------------------------------- -->
+## {.HSNRblue1}
+
+```{r}
+#| echo: true
+1+2+3+4
+```
+
+
+<!-- ----------------------------------------- -->
+
+<!------------------------------------>
+## HSNR-Vorlage {.smaller}
+
+Alle **notwendigen** *Dateien* ***befinden*** sich im Unterordner `HSNRtheme`.
+
+Neben den notwendigen Bilddateien liegen hier:
+
+- `apa-single-spaced.csl` - die APA-Zitationsvorlage
+- `HSNR.scss` - die SCSS-Datei mit allen Farb- und Stylingangaben.
+- `0 1 2 3 4 5 6 7 8 9 10 1000 100000`
+
+
+Im Ordner `images` liegen die Bilddateien der eigentlichen Präsentation. Dieser Ordner gehört nicht zur Vorlage, sondern ändert sich von Präsentation zu Präsentation.
+
+:::{.aside}
+Schauen Sie sich die Datei `Folientest.qmd` an, um zu sehen, wie diese Folien hier erzeugt wurden.
+
+:::
+<!------------------------------------>
+
+
+
+
+<!------------------------------------>
+## Zwischentitel
+
+Die Vorlage bietet zwei "Zwischentitel" an,
+
+- `{.zwischentitel1}`, im dunklen HSNR-Blauton
+- `{.zwischentitel2}`, im hellen HSNR-Blauton
+<!------------------------------------>
+
+
+
+<!------------------------------------>
+# Test {.zwischentitel1}
+
+Dies ist ein Zwischentitel<br>
+im dunklen HSNR-Blauton
+<!------------------------------------>
+
+
+
+<!------------------------------------>
+##  {.zwischentitel2}
+
+Dies ist ein Zwischentitel<br>
+im hellen HSNR-Blauton
+<!------------------------------------>
+
+
+<!------------------------------------>
+## Klasse `{.r-fit-text}`
+
+Zusammen mit den Klassen `{.r-fit-text}` und `{.center}` sieht es dann so aus (nächste Folie)...
+<!------------------------------------>
+
+
+
+<!------------------------------------>
+##  {.zwischentitel2 .center}
+
+:::{.r-fit-text}
+Dies ist ein<br> Zwischentitel
+
+:::
+<!------------------------------------>
+
+
+<!------------------------------------>
+## Farben  {.smaller}
+
+Das Theme stellt die die Blautöne der HSNR über die Klassen `{.HSNRblue1}` und `{.HSNRblue2}` zur Verfügung.
+
+- [Dies ist HSNRblue1]{.HSNRblue1}
+- [Dies ist HSNRblue2]{.HSNRblue2}
+
+Dies funktioniert auch als Hintergrundfarbe, wenn ein `bg-` vor den Klassennamen geschrieben wird.
+
+- [Dies ist .bg-HSNRblue1]{.bg-HSNRblue1 .white}
+- [Dies ist .bg-HSNRblue2]{.bg-HSNRblue2 .white}
+<!------------------------------------>
+
+
+<!------------------------------------>
+## weitere Farben {.smaller}
+
+::: {.callout-note}
+## [Folgende weitere Farben sind im Theme enthalten:]{.size30}
+
+[.gray]{.gray }
+[.silver]{.silver }
+[.light-silver]{.light-silver }
+[.moon-gray]{.moon-gray }
+[.light-gray]{.light-gray }
+[.near-white]{.near-white }
+[.white]{}
+[.dark-red]{.dark-red }
+[.red]{.red }
+[.light-red]{.light-red }
+[.orange]{.orange }
+[.gold]{.gold }
+[.yellow]{.yellow }
+[.light-yellow]{.light-yellow }
+[.light-purple]{.light-purple}
+[.dark-pink]{.dark-pink }
+[.hot-pink]{.hot-pink }
+[.pink]{.pink }
+[.light-pink]{.light-pink }
+[.dark-green]{.dark-green }
+[.green]{.green}
+[.light-green]{.light-green}
+[.light-blue]{.light-blue }
+[.lightest-blue]{.lightest-blue }
+[.washed-blue]{.washed-blue}
+[.washed-green]{.washed-green }
+[.washed-yellow]{.washed-yellow }
+[.washed-red]{.washed-red }
+[.black]{.black }
+[.near-black]{.near-black }
+[.dark-gray]{.dark-gray }
+[.mid-gray]{.mid-gray }
+[.dark-red]{.dark-red}
+[.red]{.red }
+[.purple]{.purple  }
+[.light-purple]{.light-purple }
+[.dark-pink]{.dark-pink }
+[.dark-green]{.dark-green}
+[.navy]{.navy }
+[.dark-blue]{.dark-blue }
+[.blue]{.blue}
+:::
+
+::: {.callout-note}
+## [Tango-Farben:]{.size30}
+
+[.Tbluedark]{.Tbluedark}
+[.Tblue]{.Tblue}
+[.Tbluelight]{.Tbluelight  }
+[.Tbrown]{.Tbrown }
+[.Tbrowndark]{.Tbrowndark }
+[.Tbrownlight]{.Tbrownlight }
+[.Tgray]{.Tgray }
+[.Tgraydark]{.Tgraydark  }
+[.Tgraylight]{.Tgraylight  }
+[.Tgraylight2]{.Tgraylight2  }
+[.Tgraylight3]{.Tgraylight3  }
+[.Tgreen]{.Tgreen}
+[.Tgreendark]{.Tgreendark  }
+[.Tgreenlight]{.Tgreenlight}
+[.Tred]{.Tred  }
+[.Treddark]{.Treddark}
+[.Tredlight]{.Tredlight}
+[.Tlilac]{.Tlilac}
+[.Tlilacdark]{.Tlilacdark }
+[.Tlilaclight]{.Tlilaclight }
+[.Tyellow]{.Tyellow }
+[.Tyellowdark]{.Tyellowdark }
+[.Tyellowlight]{.Tyellowlight }
+[.Torange]{.Torange}
+[.Torangedark]{.Torangedark }
+[.Torangelight]{.Torangelight }
+:::
+
+::: {.callout-tip appearance="simple"}
+Die Farben stehen auch als Hintergrundfarben zur Verfügung. Hierfür schreiben Sie einfach ein `bg-` vor den Farbnamen, also z.B. `{.bg-hot-pink}`
+:::
+<!------------------------------------>
+
+
+<!------------------------------------>
+## Shadow-Text
+
+Das Theme enthält folgende Schattierungsklassen:
+
+- [.shadow-hsnr1]{.shadow-hsnr1}
+- [.shadow-hsnr2]{.shadow-hsnr2}
+- [.shadow-black]{.shadow-black}
+- [.shadow-silver]{.shadow-silver}
+- [.shadow-grau]{.shadow-grau}
+
+<!------------------------------------>
+
+<!------------------------------------>
+## Shadow-Box
+
+Die Klasse `{.shadow-box}` erzeugt eine schattige Kiste
+
+:::{.shadow-box}
+Ich habe 'nen Schatten
+:::
+<!------------------------------------>
+
+
+
+<!------------------------------------>
+## Boxen
+
+Die Klasse `{.instructions}` erzeugt eine umrandete Kiste
+
+<br>
+
+:::{.instructions}
+Ich bin eine Box
+
+```html
+mit eigenem Source-Code-Style
+```
+:::
+<!------------------------------------>
+
+
+<!------------------------------------>
+## Boxen
+
+Weitere Boxen werden über die Klasse `{.blankbox}` erzeugt.
+
+<br>
+
+:::{.blankbox}
+Ich bin eine Blankbox
+:::
+
+
+:::{.blankbox .bg-HSNRblue2}
+Ich bin eine Blankbox mit .bg-HSNRblue2
+:::
+
+
+:::{.blankbox .bg-light-blue .white}
+Ich bin eine Blankbox mit `.bg-light-blue` und `.white`
+:::
+
+
+<!------------------------------------>
+
+
+<!------------------------------------>
+## Floating Shadow Images
+
+:::{.float-right .shadow-img}
+![](beforeyoustartitsnoteasy.jpg){width=300}
+:::
+
+<br>
+
+Über die Klassen `{.float-left}`, `{.float-right}` und `{.shadow-img}` können Bilder nach links oder rechts floaten, und sie erhalten einen schattierten Rahmen.
+<!------------------------------------>
+
+
+
+
+<!-- ----------------------------------------- -->
+## Zentrieren
+
+Mittels der Klasse `{.tc}` können Inhalte zentriert werden
+
+:::{.tc}
+![Wau Holland (✝ 2001)](images/WauHolland_1.jpg){width="350"}
+
+Ich bin ein zentrierter Text!
+:::
+<!-- ----------------------------------------- -->
+
+
+<!-- ----------------------------------------- -->
+## Größen (Text)
+
+Mittels der Klasse `{.size0}` bis `{.size150}` kann die Größe der Schrift beeinflusst werden:
+
+[Dieser Text ist `.size20`]{.size20}
+
+[Dieser Text ist `.size30`]{.size30}
+
+[Dieser Text ist `.size40`]{.size40}
+
+[Dieser Text ist `.size50`]{.size50}
+
+
+
+<!-- ----------------------------------------- -->
+
+
+<!-- ----------------------------------------- -->
+## Größen (Bilder)
+
+Mittels der Klasse `{.figw10}` bis `{.figw1000}` kann die Größe von Bildern beeinflusst werden:
+
+:::{.figw50}
+![](quarto.png)
+:::
+
+
+:::{.figw150}
+![](quarto.png)
+:::
+
+
+:::{.figw250}
+![](quarto.png)
+:::
+
+:::{.figw550}
+![](quarto.png)
+:::
+
+
+<!-- ----------------------------------------- -->
+
+
+
+
+

@@ -1,0 +1,40 @@
+/*-- scss:defaults --*/
+
+@import url(fonts/Vollkorn-Regular.woff2);
+@import url(fonts/TannenbergFett.woff2);
+
+$font-family-sans-serif: "Vollkorn" !default;
+
+@font-face {
+  font-family: 'Vollkorn';
+  src: url('fonts/TannenbergFett.woff2') format('woff2');
+  font-weight: normal; // Black
+  font-style: normal;
+}
+
+
+
+@font-face {
+  font-family: 'Vollkorn';
+  src: url('fonts/Vollkorn-Italic.woff2') format('woff2');
+  font-weight: normal; // Black
+  font-style: italic;
+}
+
+
+
+@font-face {
+  font-family: 'Vollkorn';
+  src: url('fonts/Vollkorn-Bold.woff2') format('woff2');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Vollkorn';
+  src: url('fonts/Vollkorn-BoldItalic.woff2') format('woff2');
+  font-weight: bold;
+  font-style: italic;
+}
+
+
