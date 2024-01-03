@@ -1,31 +1,8 @@
 ---
-footer: "Prof. Dr. Theo Rethisch | Fachbereich 10 | Hochschule Niederrhein"
-lang: de
+title: "Demo"
 bibliography: literatur.bib
-slide-number: true
-scrollable: true
-citations-hover: true
-footnotes-hover: true
-controls: true
-hash-type: number
-from: markdown+emoji
-fig-format: png
-hide-inactive-cursor: true
-hide-cursor-time: 200
-link-external-icon: true
-link-external-newwindow: true
 format: 
-  revealjs: 
-    embed-resources: true # alle benötigten Dateien direkt in den HTML-Output schreiben
-    transition: fade
-    background-transition: slide
-    theme: [default, HSNR.scss, fontvollkorn.scss, fontrobotmono.scss]
-    resources:
-      - fonts/Roboto-Mono-regular.woff2
-      - fonts/Vollkorn-Bold.woff2
-      - fonts/Vollkorn-BoldItalic.woff2
-      - fonts/Vollkorn-Italic.woff2
-      - fonts/Vollkorn-Regular.woff2
+  hsnr-revealjs
 ---
 
 
@@ -43,7 +20,6 @@ format:
 ###### MHC M3 Spezialwissen 2022
 
 ###### 11.10.2021 | MHC
-
 
 :::
 
@@ -332,7 +308,7 @@ Ich bin eine Blankbox mit `.bg-light-blue` und `.white`
 Mittels der Klasse `{.tc}` können Inhalte zentriert werden
 
 :::{.tc}
-![Wau Holland (✝ 2001)](images/WauHolland_1.jpg){width="350"}
+<!-- ![Wau Holland (✝ 2001)](images/WauHolland_1.jpg){width="350"} -->
 
 Ich bin ein zentrierter Text!
 :::
