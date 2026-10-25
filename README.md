@@ -8,7 +8,7 @@ For details on how to convert from a single-themed document into a Quarto Extens
 
 ## Installing
 
-You can obtain a copy of the extension by using:
+To start a new presentation from the template, use:
 
 ```bash
 quarto use template coatless-quarto/hsnr-revealjs
@@ -16,6 +16,12 @@ quarto use template coatless-quarto/hsnr-revealjs
 
 This will install the extension and create an example qmd file that
 you can use as a starting place for your presentation slides.
+
+To add the extension to an existing project without the example slides, use:
+
+```bash
+quarto add coatless-quarto/hsnr-revealjs
+```
 
 ## Using
 
@@ -35,6 +41,22 @@ author:
 date: last-modified
 ---
 ```
+
+### Changing the footer and language
+
+The format sets a placeholder footer ("Prof. Dr. Theo Rethisch | Fachbereich 10 | Hochschule Niederrhein") and German as the document language (`lang: de`). You can override both in your document header:
+
+```markdown
+---
+title: A title
+lang: en
+format:
+  hsnr-revealjs:
+    footer: "Your Name | Your Department | Your Institution"
+---
+```
+
+`lang` sets the language of the page and of Quarto's built-in labels, such as callout titles ("Note" in place of "Hinweis"). To leave the footer empty, use `footer: ""`.
 
 ## Acknowledgements
 
