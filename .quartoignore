@@ -1,0 +1,4 @@
+# Files that quarto use template should not copy into a new project
+*.Rproj
+*.code-workspace
+literatur.bib

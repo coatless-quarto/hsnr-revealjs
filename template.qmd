@@ -1,6 +1,5 @@
 ---
 title: "Demo"
-bibliography: literatur.bib
 format: 
   hsnr-revealjs
 ---
